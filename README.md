@@ -58,6 +58,13 @@ Make a config.json file for the application, and then launch the uchiwa containe
     # Start Docker container. It will listen on port 3000 by default
     docker run -d -p 3000:3000 -v ~/uchiwa-config:/config uchiwa/uchiwa
 
+### Multinode deployment with SaltStack
+
+To run Sensu server with Uchiwa dashboard and multiple clients use SaltStack automated deployment.
+More information about deployment procedure [here.](https://github.com/komljen/sensu-salt)
+
+For testing on 3 VMs locally use Vagrant.
+
 ## Configuration
 ### sensu
 - `name` - String: Name of the Sensu API (used as datacenter name). If empty, a random one will be generated.
